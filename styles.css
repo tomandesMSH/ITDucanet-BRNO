@@ -253,3 +253,50 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.formmove {
+  margin-right: 1000px
+}
+
+.formulare {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxformulare {
+  padding: 20px;      
+  width: 700px;       
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.formularinput {
+  width: 100%;
+  padding: 14px;      
+  margin-top: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 18px;   
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.formulartlacitko {
+  margin-top: 15px;
+  padding: 15px 30px; 
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(#0071c7, #104d7b);
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  border: 2px solid black;
+  transition: transform 0.3s ease;
+}
+
+.formulartlacitko:hover {
+  background: #0071c7;
+}
