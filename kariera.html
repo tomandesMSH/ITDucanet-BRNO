@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ITDucanet BRNO</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="nav">
+    <a href="index.html" class="aktivni">Domů</a>
+    <a href="sluzby.html">Služby</a>
+    <a href="onas.html">O nás</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="https://tomandesmsh.github.io/EducaGroup/novinky">Novinky</a>
+  </div>
+
+  <div class="header">
+    <a href="index.html"><img class="logo" src="branding/logo2.png" alt="logo"></a>
+    <h1>ITDucanet BRNO</h1>
+    <p><i>IT podpora, která mluví vaší řečí, <strong>od roku 1997</strong></i> </p>
+  </div>
+  <div class="pruh">
+    <span>IT servis • Správa sítí • Instalace serverů • Hudcova 367/78 • Tel: +420 123 456 789</span>
+</div>
+
+<h1 style="text-align:center"> Nábor do týmu </h1>
+<div class="formulare">
+    <form class="boxformulare" action="index.html" method="get" enctype="multipart/form-data">
+      <label for="jmeno">👤Jméno:</label><br>
+      <input class="formularinput" type="text" id="jmeno" name="jmeno" required><br><br>
+
+      <label for="prijmeni">👥Příjmení:</label><br>
+      <input class="formularinput" type="text" id="prijmeni" name="prijmeni" required><br><br>
+
+      <label for="prijmeni">💼Firma <i>(nepovinné)</i>:</label><br>
+      <input class="formularinput" type="text" id="prijmeni" name="prijmeni"><br><br>
+
+      <label for="telefon">📞 Telefonní číslo:</label><br>
+      <input class="formularinput" type="text" id="telefon" name="telefon" required><br><br>
+
+      <label for="lokace">🏡Bydliště:</label><br>
+      <input class="formularinput" type="text" id="lokace" name="lokace" required><br><br>
+      <h3> Seřaďte své dovednosti podle úrovně zkušeností (od nejvyšší po nejnižší) </h3>
+      <select class="formularinput" id="service" name="service" required>
+        <option style="text-align: center;" value="">-- Vyberte obor ve kterém excelujete --</option>
+        <option  value="servis">Exceluji v 💻 Servis počítačů</option>
+        <option  value="site">Exceluji v 🔧 Správa sítí</option>
+        <option  value="servery">Exceluji v 🛠️ Instalace serverů</option>
+        <option  value="helpdesk">Exceluji v 📞 Helpdesk & konzultace</option>
+      </select><br><br>
+      <select class="formularinput" id="service" name="service" required>
+        <option style="text-align: center;" value="">-- Vyberte obor ve kterém se cítíte pohodlně, ale pořád se máte co učit --</option>
+        <option  value="servis">Docela mi jde 💻 Servis počítačů</option>
+        <option  value="site">Docela mi jde 🔧 Správa sítí</option>
+        <option  value="servery">Docela mi jde 🛠️ Instalace serverů</option>
+        <option  value="helpdesk">Docela mi jde 📞 Helpdesk & konzultace</option>
+      </select><br><br>
+      <select class="formularinput" id="service" name="service" required>
+        <option style="text-align: center;" value="">-- Vyberte obor ve kterém jste občas zmatení--</option>
+        <option  value="servis">Občas se ztrácím v 💻 Servis počítačů</option>
+        <option  value="site">Občas se ztrácím v 🔧 Správa sítí</option>
+        <option  value="servery">Občas se ztrácím v 🛠️ Instalace serverů</option>
+        <option  value="helpdesk">Občas se ztrácím v 📞 Helpdesk & konzultace</option>
+      </select><br><br>
+      <select class="formularinput" id="service" name="service" required>
+        <option style="text-align: center;" value="">-- Vyberte obor ve kterém úplně plavete--</option>
+        <option  value="servis">Vůbec mi nejde 💻 Servis počítačů</option>
+        <option  value="site">Vůbec mi nejde 🔧 Správa sítí</option>
+        <option  value="servery">Vůbec mi nejde 🛠️ Instalace serverů</option>
+        <option  value="helpdesk">Vůbec mi nejde 📞 Helpdesk & konzultace</option>
+      </select><br><br>
+      <p>📃Pošlete nám Váš životopis:</p>
+      <label for="file-upload" class="custom-file-upload">Nahrát soubor...</label><br>
+      <input id="file-upload" required type="file"/><br>
+
+      <label for="problem" style="line-height: 30px;">📨Napište nám něco o sobě: </label><br>
+      <textarea class="formularinput" id="problem" name="problemtext" rows="4" style="width: 99%;font-family: sans-serif; font-size:15px" required></textarea>
+
+
+        <br>
+      <button class="formulartlacitko" type="submit">Potvrdit</button>
+    </form>
+  </div>
+
+<pre>
+
+</pre>
+
+<footer>
+    <p><strong>ITDucanet BRNO</strong> — © 2025</p>
+  </footer>
+</body>
+</html>

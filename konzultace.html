@@ -26,29 +26,39 @@
   
   <div class="formulare">
     <form class="boxformulare" action="hotovo.html" method="get" enctype="multipart/form-data">
-      <label for="jmeno">Jméno:</label><br>
+      <label for="jmeno">👤Jméno:</label><br>
       <input class="formularinput" type="text" id="jmeno" name="jmeno" required><br><br>
 
-      <label for="prijmeni">Příjmení:</label><br>
+      <label for="prijmeni">👥Příjmení:</label><br>
       <input class="formularinput" type="text" id="prijmeni" name="prijmeni" required><br><br>
 
-      <label for="prijmeni">Firma <i>(nepovinné)</i>:</label><br>
+      <label for="prijmeni">💼Firma <i>(nepovinné)</i>:</label><br>
       <input class="formularinput" type="text" id="prijmeni" name="prijmeni"><br><br>
 
-      <label for="telefon">Telefonní číslo:</label><br>
+      <label for="telefon">📞 Telefonní číslo:</label><br>
       <input class="formularinput" type="text" id="telefon" name="telefon" required><br><br>
 
-      <label for="lokace">Lokace:</label><br>
+      <label for="lokace">🏡Lokace:</label><br>
       <input class="formularinput" type="text" id="lokace" name="lokace" required><br><br>
       
+      <label for="service">💬 Co za službu potřebujete?</label><br>
+      <select class="formularinput" id="service" name="service" required>
+        <option style="text-align: center;" value="">-- Vyberte službu --</option>
+        <option style="text-align: center;" value="servis">💻 Servis počítačů</option>
+        <option style="text-align: center;" value="site">🔧 Správa sítí</option>
+        <option style="text-align: center;" value="servery">🛠️ Instalace serverů</option>
+        <option style="text-align: center;" value="helpdesk">📞 Helpdesk & konzultace</option>
+      </select><br><br>
+      
+
       <label for="problem" style="line-height: 30px;">Popište svůj problém</label><br>
       <textarea class="formularinput" id="problem" name="problemtext" rows="4" style="width: 99%;font-family: sans-serif; font-size:15px" required></textarea>
 
-      <p>Pošlete nám fotografii s problémem:</p>
+      <p>📸Pošlete nám fotografii s problémem:</p>
       <label for="file-upload" class="custom-file-upload">Vybrat fotografii...</label><br>
       <input id="file-upload" required type="file"/><br>
         
-      <label for="cas">Na kdy se chcete objednat?</label><br>
+      <label for="cas">🕓Na kdy se chcete objednat?</label><br>
       <input class="formularinput2" type="date" id="den" name="den" required> <input class="formularinput2" type="time" id="cas" name="cas" required>
         <br>
         <br>

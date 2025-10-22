@@ -340,7 +340,7 @@ input[type="file"] {
   min-width: 240px;
   color:black;
   text-decoration: none;
-
+}
   .popis2 {
     margin: 6px 0 0 0;
     font-size: 15px;
@@ -349,3 +349,85 @@ input[type="file"] {
     color:black;
     text-decoration: none;
   }
+ 
+ .btn {
+   display: inline-block;
+   text-decoration: none;
+   text-align: center;
+   background: linear-gradient(90deg, #007BFF, #00CFFF);
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   font-size: 16px;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: 0.3s; 
+   border: 2px solid black;
+}
+  
+.btn:hover {
+  background: linear-gradient(90deg, #005FCC, #00AEEF);
+  transform: scale(1.05);
+}
+
+.clanek-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.clanek {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 880px;
+  width: 100%;
+  background: #f5f5f5;
+  border: 2px solid #0071c7;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  text-decoration: none;
+  color: black;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.clanek:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.2);
+}
+
+.clanek img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.texty2 {
+  padding: 20px 28px;
+}
+
+.nazev2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #0071c7;
+}
+
+.popis2 {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.autor {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.ctxt {
+  margin: 0 auto;
+  max-width: 950px;
+  text-align: center;
+}
