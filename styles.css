@@ -431,3 +431,15 @@ input[type="file"] {
   max-width: 950px;
   text-align: center;
 }
+
+.clanektxt p {
+  margin-left: 250px;
+  max-width: 750px;
+}
+
+.zpatecka {
+  position: fixed;
+  top: 10px;
+  left: 75px;
+  z-index: 10;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ITDucanet BRNO</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="nav">
+    <a href="../index.html">Domů</a>
+    <a href="../sluzby.html">Služby</a>
+    <a href="../onas.html">O nás</a>
+    <a href="../kontakt.html">Kontakt</a>
+    <a href="https://tomandesmsh.github.io/EducaGroup/novinky">Novinky</a>
+  </div>
+
+  <div class="header">
+    <a href="../index.html"><img class="logo" src="../branding/logo2.png" alt="logo"></a>
+    <h1>ITDucanet BRNO</h1>
+    <p><i>IT podpora, která mluví vaší řečí, <strong>od roku 1997</strong></i> </p>
+  </div>
+  <div class="pruh">
+    <span>IT servis • Správa sítí • Instalace serverů • Hudcova 367/78 • Tel: +420 123 456 789</span>
+</div>
+<button class="btn zpatecka" onclick="history.back()">Zpět</button>
+<h1 style="text-align:center"> Jak nainstalovat Tiny 11? </h1>
+<h2 style="margin-left:250px;"> 1. Požadavky </h2>
+<div class="clanektxt">
+<p style="margin-left:275px"> 1. <strong>USB disk</strong> (bude naformátován, takže si uložte svá data) </p>
+<p style="margin-left:275px"> 2. <strong>Rufus</strong> (program pro vytváření bootovatelných USB flash disků z ISO) </p>
+<p style="margin-left:275px"> 3. <strong>ISO soubor</strong> (vysvětleno v druhém kroku) </p>
+</div>
+
+<img style="max-width:100px; position:relative; left:700px; bottom: 200px" src="../navody/tiny/usb.png">
+<img style="max-width:100px; position:relative; z-index: 2; left:700px; bottom: 100px" src="../navody/tiny/rufus.png">
+<img style="max-width:75px; position:relative; left:400px; z-index: 3; bottom: 75px" src="../navody/tiny/iso.png">
+
+
+<h2 style="margin-left:250px; margin-top:-50px;"> 1.1 Požadavky na hardware</h2>
+<p style="margin-left:275px"> 1. Minimálně <strong>512MB RAM</strong> Doporučeno <strong>2GB RAM</strong></p>
+<p style="margin-left:275px"> 2. Minimálně <strong>8GB úložiště</strong> Doporučeno <strong>16GB úložiště</strong> </p>
+<p style="margin-left:275px"> 3. Minimálně <strong>CPU - Intel Core 2 Duo (1.06 GHz)</strong></p>
+<p style="margin-left:275px"> 4. integrovaná grafika z čipsetů Intel nebo AMD <strong>z počátku 2000 let</strong> je dostačující</p>
+<p style="margin-left:275px"> TPM 2.0 a Secure Boot <strong>není potřeba.</strong>  </p>
+
+<img style="max-width:400px; position:relative; left:900px; z-index: 3; bottom: 200px" src="../navody/tiny/komponenty.png">
+
+<h2 style="margin-left:250px; margin-top: -150px"> 2. Získání ISO souboru</h2>
+<div class="clanektxt">
+<p style="margin-left:275px"> Přejděte na web <a href="https://ntdev.blog/2024/01/08/the-complete-tiny10-and-tiny11-list/">Tiny</a>, nebo na <a href="https://archive.org/details/tiny-11-NTDEV"> Internet Archive </a> a vyberte verzi, kterou chcete nainstalovat. Zkontrolujte, zda váš systém podporuje verze x64, nebo x32, zjistíme to tak, že přejdeme do nastavení > systém > o systému. Pokud uvidíte: „x64-based processor“ (procesor založený na x64), nainstalujte verzi TinyOS x64, pokud vidíte „x32/x86-based processor“ (procesor založený na x32/x86), použijte verzi TinyOS x86.</p>
+</div>
+<img style="max-width:350px; position:relative; left:1070px; bottom: 140px" src="../navody/tiny/specifikace.png">
+
+<div class="clanektxt">
+<p style="margin-left:275px; margin-top: -275px"> Stáhněte si soubor ISO pomocí odkazu vedle něj. </p>
+<p style="margin-left:275px;"> ISO soubor si můžete buď přímo stáhnout z Internetového archivu, nebo si stáhnout torrent a použít torrentového klienta, jako je qBittorrent. Použití torrentu je rychlejší než přímé stahování.</p>
+</div>
+<img style="max-width:350px; position:relative; left:1422px; bottom: 175px;" src="../navody/tiny/download.png">
+<img style="max-width:350px; position:relative; left:1070px; bottom: 230px; outline: 2px solid black;" src="../navody/tiny/downloadIA.png">
+
+<h2 style="margin-left:250px; margin-top:-190px;"> 3. Flashujte USB </h2>
+<div class="clanektxt">
+<p style="margin-left:275px"> Otevřete Rufus, vyberte USB a vyberte ISO, vyberte schéma oddílů. Obvykle by to mělo být GPT, pokud nepoužíváte starší systém. Zde je návod, jak zkontrolovat, které schéma oddílů vaše zařízení používá: Vyhledejte „Správa disků“, Najděte disk, na který budete systém instalovat, nikoli flash disk. klikněte pravým tlačítkem myši a vyberte vlastnosti.. </p>
+</div>
+<img style="max-width:350px; position:relative; left:1070px; bottom: 100px; outline: 2px solid black;" src="../navody/tiny/disk.png">
+<div class="clanektxt">
+<p style="margin-left:275px; margin-top: -200px"> Otevřete Rufus, vyberte USB a vyberte ISO, vyberte schéma oddílů. Obvykle by to mělo být GPT, pokud nepoužíváte starší systém. Zde je návod, jak zkontrolovat, které schéma oddílů vaše zařízení používá: Vyhledejte „Správa disků“, Najděte disk, na který budete systém instalovat, nikoli flash disk. klikněte pravým tlačítkem myši a vyberte vlastnosti.. </p>
+</div>
+
+
+<pre>
+
+
+
+
+</pre>
+
+
+  <footer>
+    <p><strong>ITDucanet BRNO</strong> — © 2025</p>
+    <p><a href="https://tomandesmsh.github.io/EducaGroup/disclaimer.html">Disclaimer</a></p>
+  </footer>
+</body>
+</html>
