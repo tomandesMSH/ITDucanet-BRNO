@@ -443,3 +443,24 @@ input[type="file"] {
   left: 75px;
   z-index: 10;
 }
+
+.scale {
+  transition: transform 0.2s ease;
+}
+
+.scale:hover {
+  transform: scale(1.1);
+}
+
+.scalexx {
+  transition: transform 0.2s ease;
+}
+
+.scalexx:hover {
+  transform: scale(1.50);
+}
+
+.t1 {
+  max-width:350px; 
+  outline:2px solid black;
+}

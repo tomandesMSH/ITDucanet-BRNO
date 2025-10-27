@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="overflow-x: hidden;"></body>
   <div class="nav">
     <a href="../index.html">Domů</a>
     <a href="../sluzby.html">Služby</a>
@@ -33,9 +33,9 @@
 <p style="margin-left:275px"> 3. <strong>ISO soubor</strong> (vysvětleno v druhém kroku) </p>
 </div>
 
-<img style="max-width:100px; position:relative; left:700px; bottom: 200px" src="../navody/tiny/usb.png">
-<img style="max-width:100px; position:relative; z-index: 2; left:700px; bottom: 100px" src="../navody/tiny/rufus.png">
-<img style="max-width:75px; position:relative; left:400px; z-index: 3; bottom: 75px" src="../navody/tiny/iso.png">
+<img class="scale" style="max-width:100px; position:relative; left:700px; bottom: 200px" src="../navody/tiny/usb.png">
+<img class="scale" style="max-width:100px; position:relative; z-index: 2; left:700px; bottom: 100px" src="../navody/tiny/rufus.png">
+<img class="scale" style="max-width:75px; position:relative; left:400px; z-index: 3; bottom: 75px" src="../navody/tiny/iso.png">
 
 
 <h2 style="margin-left:250px; margin-top:-50px;"> 1.1 Požadavky na hardware</h2>
@@ -45,38 +45,67 @@
 <p style="margin-left:275px"> 4. integrovaná grafika z čipsetů Intel nebo AMD <strong>z počátku 2000 let</strong> je dostačující</p>
 <p style="margin-left:275px"> TPM 2.0 a Secure Boot <strong>není potřeba.</strong>  </p>
 
-<img style="max-width:400px; position:relative; left:900px; z-index: 3; bottom: 200px" src="../navody/tiny/komponenty.png">
+<img class="scale" style="max-width:400px; position:relative; left:900px; z-index: 3; bottom: 200px" src="../navody/tiny/komponenty.png">
 
 <h2 style="margin-left:250px; margin-top: -150px"> 2. Získání ISO souboru</h2>
 <div class="clanektxt">
 <p style="margin-left:275px"> Přejděte na web <a href="https://ntdev.blog/2024/01/08/the-complete-tiny10-and-tiny11-list/">Tiny</a>, nebo na <a href="https://archive.org/details/tiny-11-NTDEV"> Internet Archive </a> a vyberte verzi, kterou chcete nainstalovat. Zkontrolujte, zda váš systém podporuje verze x64, nebo x32, zjistíme to tak, že přejdeme do nastavení > systém > o systému. Pokud uvidíte: „x64-based processor“ (procesor založený na x64), nainstalujte verzi TinyOS x64, pokud vidíte „x32/x86-based processor“ (procesor založený na x32/x86), použijte verzi TinyOS x86.</p>
 </div>
-<img style="max-width:350px; position:relative; left:1070px; bottom: 140px" src="../navody/tiny/specifikace.png">
+<img class="scale" style="max-width:350px; position:relative; left:1070px; bottom: 140px" src="../navody/tiny/specifikace.png">
 
 <div class="clanektxt">
 <p style="margin-left:275px; margin-top: -275px"> Stáhněte si soubor ISO pomocí odkazu vedle něj. </p>
 <p style="margin-left:275px;"> ISO soubor si můžete buď přímo stáhnout z Internetového archivu, nebo si stáhnout torrent a použít torrentového klienta, jako je qBittorrent. Použití torrentu je rychlejší než přímé stahování.</p>
 </div>
-<img style="max-width:350px; position:relative; left:1422px; bottom: 175px;" src="../navody/tiny/download.png">
-<img style="max-width:350px; position:relative; left:1070px; bottom: 230px; outline: 2px solid black;" src="../navody/tiny/downloadIA.png">
-
-<h2 style="margin-left:250px; margin-top:-190px;"> 3. Flashujte USB </h2>
-<div class="clanektxt">
-<p style="margin-left:275px"> Otevřete Rufus, vyberte USB a vyberte ISO, vyberte schéma oddílů. Obvykle by to mělo být GPT, pokud nepoužíváte starší systém. Zde je návod, jak zkontrolovat, které schéma oddílů vaše zařízení používá: Vyhledejte „Správa disků“, Najděte disk, na který budete systém instalovat, nikoli flash disk. klikněte pravým tlačítkem myši a vyberte vlastnosti.. </p>
-</div>
-<img style="max-width:350px; position:relative; left:1070px; bottom: 100px; outline: 2px solid black;" src="../navody/tiny/disk.png">
-<div class="clanektxt">
-<p style="margin-left:275px; margin-top: -200px"> Otevřete Rufus, vyberte USB a vyberte ISO, vyberte schéma oddílů. Obvykle by to mělo být GPT, pokud nepoužíváte starší systém. Zde je návod, jak zkontrolovat, které schéma oddílů vaše zařízení používá: Vyhledejte „Správa disků“, Najděte disk, na který budete systém instalovat, nikoli flash disk. klikněte pravým tlačítkem myši a vyberte vlastnosti.. </p>
-</div>
-
+<img class="scale" style="max-width:350px; position:relative; left:1070px; bottom: -50px; outline: 2px solid black;" src="../navody/tiny/downloadIA.png">
+<img class="scale" style="position:relative; bottom: 100px;" src="../navody/tiny/download.png">
 
 <pre>
 
 
 
 
-</pre>
 
+
+
+
+
+
+
+</pre>
+<h2 style="margin-left:250px; margin-top:-190px;"> 3. Flashujte USB </h2>
+<div class="clanektxt">
+<p style="margin-left:275px"> Otevřete Rufus, vyberte USB a vyberte ISO, vyberte schéma oddílů. Obvykle by to mělo být GPT, pokud nepoužíváte starší systém. Zde je návod, jak zkontrolovat, které schéma oddílů vaše zařízení používá: Vyhledejte „Správa disků“, Najděte disk, na který budete systém instalovat, nikoli flash disk. klikněte pravým tlačítkem myši a vyberte vlastnosti.. </p>
+</div>
+<div style="text-align:center; margin-left:550px; margin-top:-75px">
+  <img class="scale" style="max-width:350px; outline:2px solid black;" src="../navody/tiny/disk.png">
+  <img class="scale" style="max-width:350px; outline:2px solid black;" src="../navody/tiny/rufusmenu.png">
+  <p style="margin-left:450px; font-family: monospace; text-align: left;">Červená → Vyberte soubor ISO.<br>
+  Zelená → Postupujte podle kroku 3+.<br>
+  Žlutá → Odstraní všechna data z USB a připraví instalaci.</p>
+</div>
+
+<h2 style="margin-top: -325px ;margin-left:250px;"> 4. Instalace systému </h2>
+<p style="margin-left: 275px; max-width: 420px;"> Přejděte do nastavení BIOS/Boot menu. Pokud používáte Windows 10, podržte klávesu Shift a klikněte na „restartovat“ v nabídce Start. Vyberte „použít zařízení“ a najděte svůj flash disk. </p>
+<p style="margin-left: 275px; max-width: 400px;"> Pokud používáte jiný operační systém, restartujte počítač a na úvodní obrazovce podržte (obvykle) klávesu „ESC“. Pokud se zobrazí BIOS, hledejte "bootmenu", nebo změňte pořadí bootování tak, aby USB bylo na prvním místě. </p>
+<br>
+
+<div style="position:relative; bottom:-40px;">
+
+  <h2 style="margin-left:250px;"> 5. Zakončení Instalace </h2>
+  <p style="margin-left: 275px; max-width: 700px;"> Už jdeme do finále! Stačí vybrat jazyk a layout klávesnice, přijmout smluvní podmínky a vybrat "custom" na této obrazovce.</p>
+  <div style="text-align:center;">
+  <p> V tomto menu vyberte možnost „Pokročilé“. Najděte svůj oddíl, klikněte na něj a stiskněte tlačítko „Další“. Poté se nainstaluje Tiny10! Hotovo! Skvělá práce!</p>
+  <img class="t1 scalexx" src="../navody/tiny/i1.png">
+  <img class="t1 scalexx" src="../navody/tiny/i4.png">
+  <img class="t1 scalexx" src="../navody/tiny/i2.png">
+  <img class="t1 scalexx" src="../navody/tiny/i3.png">
+  </div>
+  <img class="scalexx" style="max-width:45%; margin-left:50px; outline:2px solid black;" src="../navody/tiny/tinyfinish.png">
+  <img class="scalexx" style="max-width:45%; margin-left:50px; outline:2px solid black;" src="../navody/tiny/tinyfinish.png">
+  
+
+</div>
 
   <footer>
     <p><strong>ITDucanet BRNO</strong> — © 2025</p>
