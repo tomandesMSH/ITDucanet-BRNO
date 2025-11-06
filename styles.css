@@ -594,9 +594,6 @@ input[type="file"] {
 @media (max-width: 820px) {
   .contact-row {
     flex-direction: column;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     align-items: center;
     gap: 40px;
     margin-top: -50px;
@@ -610,8 +607,7 @@ input[type="file"] {
   top: 50%;
   transform: translateY(-50%);
 }
-=======
->>>>>>> temp-branch
+
   }
   .contact-row .contact-small {
     width: 100%;
@@ -694,9 +690,5 @@ input[type="file"] {
   opacity: 1; /* fully visible */
 }
 
-<<<<<<< HEAD
+
 /* S timhle mi dopomahalo ChatGPT, protoze jsem nevedel, jak ten text udelat cernej, i kdyz predtim byla jinak nastavena opacity. */
-=======
-/* S timhle mi dopomahalo ChatGPT, protoze jsem nevedel, jak ten text udelat cernej, i kdyz predtim byla jinak nastavena opacity. */
->>>>>>> 401cf2c (better contacts page)
->>>>>>> temp-branch
